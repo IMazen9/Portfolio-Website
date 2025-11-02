@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/images/letter m.png">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span>M</span>azen.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Need a <span>Fast & Modern Website</span>?<br> I Can Build It for You</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/images/my-photo.jpeg" alt="my-photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi! I’m a Business Information Systems student with a perfect 4.0 GPA and a strong passion for
+                        designing and building modern, responsive websites. I love turning ideas into clean and
+                        professional digital experiences. I’m constantly improving my skills, taking on new challenges,
+                        and helping businesses establish a strong online presence with results they can be proud of.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br> Designing Web interfaces </li>
+                            <li><span>Web Development</span><br> Building responsive and mobile-friendly websites </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>2025 - Current</span><br> Frontend / Digital Egypt Builders Initiative </li>
+                            <li><span>2023</span><br> Network Engineer / Training in Baheya Hospital </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>Currently</span><br> Business Information Systems — [HELWAN] </li>
+                            <li><span>2022</span><br> AICE COURSE / AI Carrer Essintials at ALX </li>
+                            <li><span>2022</span><br> Cyber Security / Information Systems Institute </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div class="service-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p class="more-text">I craft modern, responsive websites that not only look stunning but also
+                        deliver a seamless and engaging experience for every visitor. Your ideas come to life with clean
+                        layouts, intuitive navigation, and professional design that makes an impact.</p>
+                    <button class="learn-more" onclick="toggleText(this)">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UX/UI Design</h2>
+                    <p class="more-text">I design user-centered interfaces that make every interaction smooth,
+                        intuitive, and enjoyable. By combining creativity and usability, I turn complex ideas into
+                        simple, engaging experiences that keep users coming back.</p>
+                    <button class="learn-more" onclick="toggleText(this)">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./assets/images/work-1.png">
+                    <div class="layer">
+                        <h3>University Website</h3>
+                        <p>A modern and responsive university website designed to showcase programs, campus life, and
+                            student services with a clean and professional layout.</p>
+                        <a href="https://imazen9.github.io/Helwan-university-website/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/images/work-2.png">
+                    <div class="layer">
+                        <h3>Digital Agency</h3>
+                        <p>A sleek digital agency website built to highlight services, clients, and projects with a
+                            strong business-focused user experience.</p>
+                        <a href="https://imazen9.github.io/Digital-agency/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/images/work-3.png">
+                    <div class="layer">
+                        <h3>Marketing Agency</h3>
+                        <p>A creative marketing agency website focused on presenting services and campaigns with an
+                            engaging and visually appealing interface.</p>
+                        <a href="https://imazen9.github.io/Marketing-Agency-Website/" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------------- contact --------------------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p class="pemail"><i class="fa-solid fa-paper-plane"></i> <span>mazenhazem2292005@gmail.com</span>
+                    </p>
+                    <p><i class="fa-solid fa-phone"></i> 01116446839</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/mazen-hazem-3077512bb/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/IMazen9" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="./assets/images/cv.pdf" class="btn" download>Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontent = document.getElementsByClassName("tab-content");
+        function opentab(e, tabname) {
+            for (tablink of tablinks) { tablink.classList.remove('active-link'); }
+            for (tabcontents of tabcontent) { tabcontents.classList.remove('active-tab'); }
+            e.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        function toggleText(button) {
+            const moreText = button.previousElementSibling;
+            moreText.classList.toggle("show");
+            if (moreText.classList.contains("show")) {
+                button.textContent = "Show Less";
+            } else {
+                button.textContent = "Learn More";
+            }
+        }
+
+        // responsive menu
+
+        var sideMenu = document.getElementById('sidemenu')
+        function openmenu() {
+            sideMenu.style.right = "0";
+        }
+        function closemenu() {
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzoBHXxQ10Z_LywSbsiSfgPJ3NLYW56XdGpcSnDkR-yiER9toCxUxQwFiXw3T2D05BOBA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = 'Thanks for Your Message'
+                    setTimeout(function () {
+                        msg.innerHTML = ''
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
